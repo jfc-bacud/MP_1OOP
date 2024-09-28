@@ -15,20 +15,17 @@ namespace ConsoleApp1
         static Random rnd = new Random();
         static List<int> recordedValues = new List<int>();
         static List<string> recordedStrings = new List<string>();
-        static int[] defaultArray = new int[15];
 
         static void Main(string[] args)
         {
             int choice = 0;
+            int[] defaultArray = new int[15];
 
             while (true)
             {
                 Console.Clear();
-
                 DisplayBoard(defaultArray, 5);
-
                 Console.WriteLine("[1] Draw \t[2] End");
-
                 if (ValidOptionSelect(out choice))
                 {
                     if (ValidOption(choice, out choice))
@@ -37,7 +34,6 @@ namespace ConsoleApp1
                     }
                 }               
             }
-
         }
 
         #region USER INPUT METHODS
@@ -90,7 +86,6 @@ namespace ConsoleApp1
         }
         #endregion
 
-
         /// <summary>
         /// ONCE USER INPUT IS VALIDATED, PROCEEDS TO A SPECIFIC OPERATION DEPENDING ON USER INPUT
         /// </summary>
@@ -131,7 +126,6 @@ namespace ConsoleApp1
             }
         }
         
-
         #region END METHODS
 
         /// <summary>
@@ -188,7 +182,6 @@ namespace ConsoleApp1
         
         #endregion
 
-
         /// <summary>
         /// PRIMARY METHOD RESPONSIBLE FOR DISPLAYING THE BINGO BOARD, AND ANY CHANGES WITHIN
         /// </summary>
@@ -227,7 +220,6 @@ namespace ConsoleApp1
             Console.WriteLine("\n");
         }
         
-
         /// <summary>
         /// METHOD RESPONSIBLE FOR GENERATING THE NUMBERS FOR THE BINGO BOARD
         /// </summary>
@@ -278,8 +270,7 @@ namespace ConsoleApp1
                 count++;
             }
             return bingoPlaceholder[count];
-        }
-        
+        }     
     }
 }
         
