@@ -1,0 +1,49 @@
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav, .nav-links {
+        display: flex; 
+}
+
+nav, 
+.nav-links {
+    display: flex; 
+}
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 8vh;
+    background-color: #ff6d1b;
+}
+
+.logo {
+    padding-top: 10px;
+    max-width: 200px;
+    height: 50px;
+    
+}
+
+.nav-links{
+    gap: 2rem;
+    list-style: none;
+}
+
+a {
+    color: white;
+    font-family: "Inter";
+    text-decoration: white;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: whitesmoke;
+}
